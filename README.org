@@ -1,20 +1,22 @@
 * Setup environment
-1. [[https://docs.anaconda.com/anaconda/install/][Install Anaconda]].
-2. [[https://www.gams.com/latest/docs/UG_MAIN.html#UG_INSTALL][Install GAMS]].
-   1. Rember to add =gamslice.txt= to your GAMS installation path.
-   2. Make sure the [[https://www.java.com/en/download/help/path.xml][PATH environment variable]] contains the GAMS installation path. You can check this by:
-      1. opening an [[https://docs.anaconda.com/anaconda/install/verify-install/#conda][Anaconda prompt]] or terminal;
-      2. Type
+1. [[https://docs.anaconda.com/anaconda/install/][Install Anaconda]] (Python 3.7).
+2. [[https://www.gams.com/latest/docs/UG_MAIN.html#UG_INSTALL][Install GAMS]]. Follow the instructions, plus:
+   1. Make sure you add GAMS directory to the [[https://www.java.com/en/download/help/path.xml][PATH environment variable]] (e.g. ticking the corresponding option during the setup). After the installation check that the following works:
+      1. open an [[https://docs.anaconda.com/anaconda/install/verify-install/#conda][Anaconda prompt]] or terminal;
+      2. type
          #+BEGIN_SRC shell
          gams
          #+END_SRC
-         and check the output.
+   2. Rember to add =gamslice.txt= to your GAMS installation path.
 3. Create the =ems= Anaconda environment.
    1. Open an [[https://docs.anaconda.com/anaconda/install/verify-install/#conda][Anaconda prompt]] or terminal.
    2. Type
       #+BEGIN_SRC shell
-      curl -O https://raw.githubusercontent.com/polimi-energy-modelling/conda-setup/master/environment.yml
+      curl -O https://raw.githubusercontent.com/polimi-energy-modelling/ems-conda-setup/master/environment.yml
       conda env create -f environment.yml
+      curl -O https://raw.githubusercontent.com/polimi-energy-modelling/ems-conda-setup/master/r-install-packages.R
+      conda activate ems
+      Rscript --vanilla r-install-packages.R
       #+END_SRC
 
 * Start a Jupyter Notebook
