@@ -1,0 +1,13 @@
+name: ems
+channels:
+  - conda-forge
+dependencies:
+  - r-base
+  - r-essentials
+  - r-devtools
+  - r-dplyr
+  - r-reticulate
+  - jupyter
+  - r-irkernel
+  - rstudio
+  - message-ix

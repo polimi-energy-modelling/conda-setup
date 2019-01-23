@@ -1,0 +1,8 @@
+* Setup environment
+** GAMS
+1. [[https://www.gams.com/latest/docs/UG_MAIN.html#UG_INSTALL][Install GAMS]].
+2. Add `gamslice.txt` to your GAMS installation path.
+3. Make sure the [[https://www.java.com/en/download/help/path.xml][PATH environment variable]] contains the GAMS installation path. Verify this by opening a terminal/command prompt and typing the command `gams`.
+** Anaconda
+1. [[https://docs.anaconda.com/anaconda/install/][Install Anaconda]].
+2. TODO
