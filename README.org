@@ -10,38 +10,33 @@
    2. Rember to add =gamslice.txt= to your GAMS installation path.
 3. Create the =ems= Anaconda environment.
    1. Open an [[https://docs.anaconda.com/anaconda/install/verify-install/#conda][Anaconda prompt]] or terminal.
-   2. Type
+   2. Create a temporary directory and download the needed setup files, typing:
       #+BEGIN_SRC shell
+      mkdir ems-conda-setup
+      cd ems-conda-setup
       curl -O https://raw.githubusercontent.com/polimi-energy-modelling/ems-conda-setup/master/environment.yml
+      curl -O https://raw.githubusercontent.com/polimi-energy-modelling/ems-conda-setup/master/r-install-packages.R      
+      #+END_SRC
+   3. Create a conda environment called =ems=, containing all the required packages, typing:
+      #+BEGIN_SRC shell
       conda env create -f environment.yml
-      curl -O https://raw.githubusercontent.com/polimi-energy-modelling/ems-conda-setup/master/r-install-packages.R
       conda activate ems
       Rscript --vanilla r-install-packages.R
       #+END_SRC
 
-* Start a Jupyter Notebook
+* Launching apps via Anaconda Navigator
+1. Launch the [[https://docs.anaconda.com/anaconda/navigator/][Anaconda Navigator]]
+2. Make sure the =ems= environment is selected in the "Applications on" dropdown list.
+3. Click on an app (e.g. Jupyter Notebook or RStudio).
+
+* Launching apps via the terminal
 1. Open an [[https://docs.anaconda.com/anaconda/install/verify-install/#conda][Anaconda prompt]] or terminal.
-2. Type
+2. Activate the =ems= environment, typing:
    #+BEGIN_SRC shell
    conda activate ems
+   #+END_SRC
+3. Use the following commands to launch a Jupyter Notebook or RStudio:
+   #+BEGIN_SRC shell
    jupyter notebook
-   #+END_SRC
-
-* Start Jupyter Lab
-1. Open an [[https://docs.anaconda.com/anaconda/install/verify-install/#conda][Anaconda prompt]] or terminal.
-2. Type
-   #+BEGIN_SRC shell
-   conda activate ems
-   jupyter lab
-   #+END_SRC
-
-* Use RStudio with Anaconda R
-1. [[https://www.rstudio.com/products/rstudio/#Desktop][Install RStudio]].
-2. Make sure RStudio bin directory is in the [[https://www.java.com/en/download/help/path.xml][PATH environment variable]].
-3. Open an [[https://docs.anaconda.com/anaconda/install/verify-install/#conda][Anaconda prompt]] or terminal.
-4. Type
-   #+BEGIN_SRC shell
-   conda activate ems
    rstudio
    #+END_SRC
-

@@ -11,3 +11,4 @@ dependencies:
   - jupyterlab
   - r-irkernel
   - message-ix
+  - rstudio
