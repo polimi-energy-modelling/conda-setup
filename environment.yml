@@ -8,6 +8,6 @@ dependencies:
   - r-dplyr
   - r-reticulate
   - jupyter
+  - jupyterlab
   - r-irkernel
-  - rstudio
   - message-ix

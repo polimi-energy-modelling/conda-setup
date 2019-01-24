@@ -27,9 +27,19 @@
    jupyter notebook
    #+END_SRC
 
-* Start RStudio
+* Start Jupyter Lab
 1. Open an [[https://docs.anaconda.com/anaconda/install/verify-install/#conda][Anaconda prompt]] or terminal.
 2. Type
+   #+BEGIN_SRC shell
+   conda activate ems
+   jupyter lab
+   #+END_SRC
+
+* Use RStudio with Anaconda R
+1. [[https://www.rstudio.com/products/rstudio/#Desktop][Install RStudio]].
+2. Make sure RStudio bin directory is in the [[https://www.java.com/en/download/help/path.xml][PATH environment variable]].
+3. Open an [[https://docs.anaconda.com/anaconda/install/verify-install/#conda][Anaconda prompt]] or terminal.
+4. Type
    #+BEGIN_SRC shell
    conda activate ems
    rstudio
