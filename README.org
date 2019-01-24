@@ -23,6 +23,25 @@
       conda activate ems
       Rscript --vanilla r-install-packages.R
       #+END_SRC
+4. Test MESSAGE tutorials
+   1. Open an [[https://docs.anaconda.com/anaconda/install/verify-install/#conda][Anaconda prompt]] or terminal.
+   2. Activate the =ems= environment, typing:
+      #+BEGIN_SRC shell
+      conda activate ems
+      #+END_SRC
+   3. Create and move to a directory where you want to save the tutorials, e.g.: 
+      #+BEGIN_SRC shell
+      mkdir message
+      cd message
+      #+END_SRC
+   4. Download the tutorials, typing:
+      #+BEGIN_SRC shell
+      messageix-dl
+      #+END_SRC
+   5. Test the tutorials in a Jupyter Notebook, typing:
+      #+BEGIN_SRC shell
+      jupyter notebook
+      #+END_SRC
 
 * Launching apps via Anaconda Navigator
 1. Launch the [[https://docs.anaconda.com/anaconda/navigator/][Anaconda Navigator]]
