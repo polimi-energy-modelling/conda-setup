@@ -2,7 +2,7 @@ name: ems
 channels:
   - conda-forge
 dependencies:
-  - r-base
+  - mro-base
   - r-essentials
   - r-devtools
   - r-dplyr
