@@ -23,7 +23,7 @@
       conda activate ems
       Rscript --vanilla r-install-packages.R
       #+END_SRC
-4. Test MESSAGE tutorials
+4. Download MESSAGE tutorials
    1. Open an [[https://docs.anaconda.com/anaconda/install/verify-install/#conda][Anaconda prompt]] or terminal.
    2. Activate the =ems= environment, typing:
       #+BEGIN_SRC shell
