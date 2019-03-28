@@ -23,6 +23,8 @@
       conda activate ems
       Rscript --vanilla r-install-packages.R
       #+END_SRC
+   4. If the =conda= command is not recognised, check PATH environment variables and be sure that the path to \Anaconda3 as well as                \Anaconda3\Scripts\ are added (as was done previously for GAMS).     
+      
 4. Download MESSAGE tutorials
    1. Open an [[https://docs.anaconda.com/anaconda/install/verify-install/#conda][Anaconda prompt]] or terminal.
    2. Activate the =ems= environment, typing:
