@@ -1,7 +1,9 @@
 name: ems
 channels:
   - conda-forge
+  - anaconda
 dependencies:
+  - anaconda-navigator
   - mro-base
   - r-essentials
   - r-devtools
