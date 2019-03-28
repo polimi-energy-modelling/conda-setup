@@ -1,5 +1,5 @@
 * Setup environment
-1. [[https://docs.anaconda.com/anaconda/install/][Install Anaconda]] (Python 3.7).
+1. [[https://www.anaconda.com/distribution/][Install Anaconda]] (Python 3.7).
 2. [[https://www.gams.com/latest/docs/UG_MAIN.html#UG_INSTALL][Install GAMS]]. Follow the instructions, plus:
    1. Make sure you add GAMS directory to the [[https://www.java.com/en/download/help/path.xml][PATH environment variable]] (e.g. ticking the corresponding option during the setup). After the installation check that the following works:
       1. open an [[https://docs.anaconda.com/anaconda/install/verify-install/#conda][Anaconda prompt]] or terminal;
