@@ -1,16 +1,17 @@
 name: ems
 channels:
-  - conda-forge
   - anaconda
+  - r
+  - conda-forge
 dependencies:
-  - anaconda-navigator
-  - mro-base
-  - r-essentials
-  - r-devtools
-  - r-dplyr
-  - r-reticulate
-  - jupyter
-  - jupyterlab
-  - r-irkernel
-  - message-ix
-  - rstudio
+  - anaconda::python
+  - anaconda::anaconda-navigator
+  - anaconda::jupyter
+  - r::mro-base
+  - r::r-essentials
+  - r::r-devtools
+  - r::r-dplyr
+  - r::r-reticulate
+  - r::r-irkernel
+  - r::rstudio
+  - conda-forge::message-ix
