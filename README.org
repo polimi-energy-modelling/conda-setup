@@ -1,5 +1,5 @@
 * Setup environment
-1. [[https://docs.conda.io/en/latest/miniconda.html][Install Miniconda] (Python 3.7).
+1. [[https://docs.conda.io/en/latest/miniconda.html][Install Miniconda]] (Python 3.7).
    NOTE: If you use Anaconda instead, and you have problems opening the Anaconda prompt, refer to [[http://docs.anaconda.com/anaconda/user-guide/troubleshooting/#cannot-open-anaconda-prompt-after-installation][this link]].
 2. [[https://www.gams.com/latest/docs/UG_MAIN.html#UG_INSTALL][Install GAMS]]. Follow the instructions, plus:
    1. Make sure you add GAMS directory to the [[https://www.java.com/en/download/help/path.xml][PATH environment variable]] (e.g. ticking the corresponding option during the setup). After the installation check that the following works:
