@@ -8,7 +8,7 @@
          #+BEGIN_SRC shell
          gams
          #+END_SRC
-   2. Rember to add =gamslice.txt= to your GAMS installation path.
+   2. Rember to add =gamslice.txt= to your GAMS installation path. If this is done correctly you will see a reference to the license after gams is called.
 3. Create the =ems= Anaconda environment.
    1. Open an [[https://docs.anaconda.com/anaconda/install/verify-install/#conda][Anaconda prompt]] or terminal.
    2. Create a temporary directory and download the needed setup files, typing:
