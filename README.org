@@ -21,7 +21,7 @@
       #+END_SRC
    4. Install Jupyter and R:
       #+BEGIN_SRC shell
-      conda install -n ems -c r jupyter mro-base r-essentials r-devtools r-dplyr r-reticulate r-irkernel rstudio
+      conda install -n ems -c r mro-base r-essentials r-devtools r-dplyr r-reticulate r-irkernel rstudio
       #+END_SRC
    5. Install Message-ix:
       #+BEGIN_SRC shell
