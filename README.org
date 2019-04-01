@@ -17,7 +17,7 @@
       #+END_SRC
    3. Create a conda environment called =ems= with Python:
       #+BEGIN_SRC shell
-      conda env create -n ems python
+      conda create -n ems python
       #+END_SRC
    4. Install Jupyter and R:
       #+BEGIN_SRC shell
@@ -53,6 +53,10 @@
       #+BEGIN_SRC shell
       messageix-dl
       #+END_SRC
+   4. Download the model to the same folder (where /path/to/model is the full path to the message folder e.g. C:\Users\message\model):
+      #+BEGIN_SRC shell
+      messageix-config --model_path /path/to/model
+      #+END_SRC   
    5. Test the tutorials in a Jupyter Notebook, typing:
       #+BEGIN_SRC shell
       jupyter notebook
