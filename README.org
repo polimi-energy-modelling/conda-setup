@@ -11,23 +11,28 @@
    2. Rember to add =gamslice.txt= to your GAMS installation path. If this is done correctly you will see a reference to the license after gams is called.
 3. Create the =ems= Anaconda environment.
    1. Open an [[https://docs.anaconda.com/anaconda/install/verify-install/#conda][Anaconda prompt]] or terminal.
-   2. Create a temporary directory and download the needed setup files, typing:
+   2. Update conda.
       #+BEGIN_SRC shell
-      mkdir ems-conda-setup
-      cd ems-conda-setup
-      curl -O https://raw.githubusercontent.com/polimi-energy-modelling/ems-conda-setup/master/environment.yml
-      curl -O https://raw.githubusercontent.com/polimi-energy-modelling/ems-conda-setup/master/r-install-packages.R      
+      conda update -n base -c defaults conda
       #+END_SRC
-   3. Create a conda environment called =ems=, containing all the required packages, typing:
+   3. Create a conda environment called =ems=, containing basic R and Python packages, typing:
       #+BEGIN_SRC shell
-      conda env create -f environment.yml
+      conda env create -n ems -c r mro-base r-essentials r-devtools r-dplyr r-reticulate r-irkernel rstudio
       #+END_SRC
-   4. Activate the =ems= environment and install the missing R packages:
+   4. Install Message-ix
+      #+BEGIN_SRC shell
+      conda install -n ems -c conda-forge message-ix
+      #+END_SRC
+   5. Activate the =ems= environment
       #+BEGIN_SRC shell
       conda activate ems
+      #+END_SRC
+   6. Install the missing R packages:
+      #+BEGIN_SRC shell
+      curl -O https://raw.githubusercontent.com/polimi-energy-modelling/ems-conda-setup/master/r-install-packages.R
       Rscript --vanilla r-install-packages.R
       #+END_SRC
-   5. If the =conda= command is not recognised, check the PATH environment variable and be sure that the path to =\Anaconda3= as well as =\Anaconda3\Scripts\= are added (as was done previously for GAMS).     
+   7. If the =conda= command is not recognised, check the PATH environment variable and be sure that the path to =\Anaconda3= as well as =\Anaconda3\Scripts\= are added (as was done previously for GAMS).
       
 4. Download MESSAGE tutorials
    1. Open an [[https://docs.anaconda.com/anaconda/install/verify-install/#conda][Anaconda prompt]] or terminal.
@@ -48,11 +53,6 @@
       #+BEGIN_SRC shell
       jupyter notebook
       #+END_SRC
-
-* Launching apps via Anaconda Navigator
-1. Launch the [[https://docs.anaconda.com/anaconda/navigator/][Anaconda Navigator]]
-2. Make sure the =ems= environment is selected in the "Applications on" dropdown list.
-3. Click on an app (e.g. Jupyter Notebook or RStudio).
 
 * Launching apps via the terminal
 1. Open an [[https://docs.anaconda.com/anaconda/install/verify-install/#conda][Anaconda prompt]] or terminal.
