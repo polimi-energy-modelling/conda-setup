@@ -15,19 +15,19 @@
       #+BEGIN_SRC shell
       conda update -n base -c defaults conda
       #+END_SRC
-   3. Create a conda environment called =ems=:
+   3. Create a conda environment called =ems= with Python:
       #+BEGIN_SRC shell
-      conda env create -n ems
+      conda env create -n ems python
       #+END_SRC
-   4. Install basic R and Python packages in it:
+   4. Install Jupyter and R:
       #+BEGIN_SRC shell
-      conda install -n ems -c r python jupyter mro-base r-essentials r-devtools r-dplyr r-reticulate r-irkernel rstudio
+      conda install -n ems -c r jupyter mro-base r-essentials r-devtools r-dplyr r-reticulate r-irkernel rstudio
       #+END_SRC
-   5. Install Message-ix
+   5. Install Message-ix:
       #+BEGIN_SRC shell
       conda install -n ems -c conda-forge message-ix
       #+END_SRC
-   6. Activate the =ems= environment
+   6. Activate the =ems= environment:
       #+BEGIN_SRC shell
       conda activate ems
       #+END_SRC
@@ -36,7 +36,7 @@
       curl -O https://raw.githubusercontent.com/polimi-energy-modelling/ems-conda-setup/master/r-install-packages.R
       Rscript --vanilla r-install-packages.R
       #+END_SRC
-   8. If the =conda= command is not recognised, check the PATH environment variable and be sure that the path to =\Anaconda3= as well as =\Anaconda3\Scripts\= are added (as was done previously for GAMS).
+   NOTE: If the =conda= command is not recognised, check the PATH environment variable and be sure that the path to =\Anaconda3= as well as =\Anaconda3\Scripts\= are added (as was done previously for GAMS).
       
 4. Download MESSAGE tutorials
    1. Open an [[https://docs.anaconda.com/anaconda/install/verify-install/#conda][Anaconda prompt]] or terminal.
